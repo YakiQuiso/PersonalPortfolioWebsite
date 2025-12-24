@@ -5,7 +5,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-150px);
   }
   to {
     opacity: 1;
@@ -23,6 +23,16 @@
   
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+  
+}
+
 .fade-out {
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -30,12 +40,12 @@
 
 .fade-in {
   opacity: 1;
-  transition: opacity 0.2s ease;
+  transition: opacity 1s ease;
 }
 
 
 .fade-in-left {
-  animation: fadeInLeft 0.6s ease both;
+  animation: fadeInLeft 0.8s ease;
 }
 
 html {
@@ -64,6 +74,20 @@ main {
   position: relative;
 }
 
+.section-content {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.section-content.fade-out {
+  opacity: 0;
+}
+
+.section-content.fade-in {
+  opacity: 1;
+}
+
+
 main section {
   position: absolute;
   width: 100%;
@@ -78,6 +102,10 @@ main section.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+section {
+  transition: opacity 0.25s ease;
 }
 
 nav {
@@ -104,10 +132,16 @@ nav .profile-image {
   position: absolute;
   align-items: center;
   white-space: nowrap;
-  filter: opacity(0.8);
   margin: 0;
   padding: 0;
   display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8 ease;
+}
+
+.profile-image.fade-in {
+  opacity: 1;
 }
 
 .nav-ul {
@@ -123,6 +157,11 @@ nav .profile-image {
   top: 0;
   width: 100%;
   height: 10vh;
+}
+
+.nav-ul li.active {
+  text-decoration-style: solid;
+  text-decoration-line: underline;
 }
 
 nav h1 {
@@ -183,7 +222,6 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  max-width: 600px;
 }
 
 .audio-title {
@@ -193,15 +231,13 @@ li {
 
 audio {
   width: 100%;
-  max-width: 400px;
-}
-
-.list-container {
-  text-align: center;
 }
 
 .list-ul {
   display: inline-block;
+}
+
+.list-ul li {
   text-align: left;
 }
 
@@ -212,17 +248,13 @@ audio {
 
 #links {
   display: grid;
-  grid-template-columns: max-content max-content max-content max-content max-content max-content;
   align-content: center;
   align-items: center;
   justify-content: center;
-  column-gap: 10px;
-  row-gap: 10px;
+  gap: 10px
 }
 
 .socialmedia-button {
-    width: 20vh;
-    height: 20vh;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 10%;
@@ -242,6 +274,10 @@ audio {
     height: 90%;
 }
 
+#copy-gmail.active {
+  background-color: green;
+}
+
 @media only screen and (max-width: 600px) {
   .profile-image {
     display: none;
@@ -249,35 +285,35 @@ audio {
   }
 
   body {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   main {
-    padding-top: 120px;
+    padding-top: 140px;
     height: 100vh;
   }
 
   main section {
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 140px);
   }
 
   nav {
-    height: 120px;
+    height: 140px;
   }
 
   .nav-ul {
     height: auto;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   nav h1 {
-    font-size: clamp(12px, 16px, 20px);
+    font-size: clamp(10px, 14px, 16px);
     text-align: left;
     left: 0;
 }
 
   nav li {
-    font-size: clamp(8px, 12px, 16px);
+    font-size: clamp(6px, 10px, 14px);
 }
 
   .lang-switch {
@@ -291,17 +327,17 @@ audio {
 
   .lang-btn img {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
   .audio-item {
     gap: 0.75rem;
-    max-width: 200px;
+    width: 400px;
 }
 
   audio {
-    max-width: 200px;
+    width: 400px;
 }
 
   #about-me {
@@ -312,11 +348,11 @@ audio {
   #links {
     column-gap: 12px;
     row-gap: 12px;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: 100%;
 }
   .socialmedia-button {
-    width: 12vh;
-    height: 12vh;
+    width: 100px;
+    height: 100px;
 }
 }
 
@@ -327,7 +363,7 @@ audio {
   }
 
   body {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   main {
@@ -375,11 +411,11 @@ audio {
 
   .audio-item {
     gap: 0.75rem;
-    max-width: 200px;
+    width: 500px;
 }
 
   audio {
-    max-width: 200px;
+    width: 500px;
 }
 
   #about-me {
@@ -390,11 +426,11 @@ audio {
   #links {
     column-gap: 12px;
     row-gap: 12px;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: 100%;
 }
   .socialmedia-button {
-    width: 12vh;
-    height: 12vh;
+    width: 140px;
+    height: 140px;
 }
 }
 
@@ -405,7 +441,7 @@ audio {
   }
 
   body {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   main {
@@ -453,11 +489,11 @@ audio {
 
   .audio-item {
     gap: 0.75rem;
-    max-width: 200px;
+    width: 600px;
 }
 
   audio {
-    max-width: 200px;
+    width: 600px;
 }
 
   #about-me {
@@ -466,13 +502,11 @@ audio {
 }
 
   #links {
-    column-gap: 12px;
-    row-gap: 12px;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: 20rem;
 }
   .socialmedia-button {
-    width: 12vh;
-    height: 12vh;
+    width: 130px;
+    height: 130px;
 }
 }
 
@@ -483,7 +517,7 @@ audio {
   }
 
   body {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   main {
@@ -531,11 +565,11 @@ audio {
 
   .audio-item {
     gap: 0.75rem;
-    max-width: 200px;
+    width: 700px;
 }
 
   audio {
-    max-width: 200px;
+    width: 700px;
 }
 
   #about-me {
@@ -544,13 +578,11 @@ audio {
 }
 
   #links {
-    column-gap: 12px;
-    row-gap: 12px;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: 50%;
 }
   .socialmedia-button {
-    width: 12vh;
-    height: 12vh;
+    width: 140px;
+    height: 140px;
 }
 }
 
@@ -563,14 +595,14 @@ audio {
     position: absolute;
     align-items: center;
     white-space: nowrap;
-    filter: opacity(0.8);
     margin: 0;
     padding: 0;
     display: block;
+    left: 10px;
 }
 
   body {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   main {
@@ -607,7 +639,7 @@ audio {
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
     background-color: #07091c;
     top: 0;
     width: 100%;
@@ -615,7 +647,7 @@ audio {
 }
 
   nav h1 {
-    left: 160px;
+    left: 170px;
     text-align: center;
     font-size: 30px;
     position: relative;
@@ -631,8 +663,8 @@ audio {
 }
 
   .lang-switch {
-    display: block;
-    gap: 0rem;
+    display: flex;
+    gap: 1rem;
 }
 
   .lang-btn {
@@ -647,11 +679,11 @@ audio {
 
   .audio-item {
     gap: 0.75rem;
-    max-width: 200px;
+    width: 800px;
 }
 
   audio {
-    max-width: 200px;
+    width: 800px;
 }
 
   #about-me {
@@ -660,12 +692,128 @@ audio {
 }
 
   #links {
-    column-gap: 12px;
-    row-gap: 12px;
-    grid-template-columns: max-content max-content max-content max-content max-content max-content;
-}
+    gap: 12px;
+    grid-template-columns: auto;
+  }
+  
   .socialmedia-button {
-    width: 20vh;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
+}
+}
+
+@media only screen and (min-width: 1920px) {
+  nav .profile-image {
+    visibility: visible;
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+    position: absolute;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    display: block;
+    left: 10px;
+}
+
+  body {
+    font-size: 26px;
+  }
+
+  main {
+    padding-top: 160px;
+    height: 100vh;
+  }
+
+  main section {
+    min-height: calc(100vh - 160px);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    height: 160px;
+    background-color: #07091c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+  .nav-ul {
+    flex: 1;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #07091c;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+  nav h1 {
+    left: 170px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+
+  nav li {
+    display: inline;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+  .lang-switch {
+    display: flex;
+    gap: 1rem;
+}
+
+  .lang-btn {
+    display: block;
+}
+
+  .lang-btn img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+  .audio-item {
+    gap: 1rem;
+    width: 1000px;
+}
+
+  audio {
+    width: 1000px;
+}
+
+  #about-me {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+  #links {
+    gap: 50px;
+    grid-template-columns: 50rem;
+  }
+  
+  .socialmedia-button {
+    width: 200px;
+    height: 200px;
 }
 }

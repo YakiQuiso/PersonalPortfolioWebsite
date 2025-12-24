@@ -5,22 +5,23 @@
 	<title>Yaki Quiso</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="Personal portfolio" />
+	<meta name="google" content="notranslate">
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="icon" href="assets/profile-minimalist.png">
 </head>
-<body>
+<body translate="no">
 	<nav>
 		<div class="nav-left">
 			<h1 data-i18n="titleH1"></h1>
 		</div>
 		<img class="profile-image" src="assets/profile-minimalist.png">
 		<ul class="nav-ul">
-			<li data-i18n="programmingNav" onclick="showSection('programming')"></li>
-			<li data-i18n="musicNav" onclick="showSection('music')"></li>
-			<li data-i18n="videoEditingNav" onclick="showSection('video-editing')"></li>
-			<li data-i18n="art2dNav" onclick="showSection('art-2d')"></li>
-			<li data-i18n="aboutMeNav" onclick="showSection('about-me')"></li>
-			<li data-i18n="linksNav" onclick="showSection('links')"></li>
+			<li data-i18n="programmingNav" class="nav-tab default-tab" onclick="showSection('programming', this)"></li>
+			<li data-i18n="musicNav" class="nav-tab" onclick="showSection('music', this)"></li>
+			<li data-i18n="videoEditingNav" class="nav-tab" onclick="showSection('video-editing', this)"></li>
+			<li data-i18n="art2dNav" class="nav-tab" onclick="showSection('art-2d', this)"></li>
+			<li data-i18n="aboutMeNav" class="nav-tab" onclick="showSection('about-me', this)"></li>
+			<li data-i18n="linksNav" class="nav-tab" onclick="showSection('links', this)"></li>
 		</ul>
 		
 		<div class="lang-switch">
@@ -49,126 +50,138 @@
   	</nav>
   	<main>
     	<section id="programming">
-        	<h2 data-i18n="programmingH2"></h2>
-        	<h3 data-i18n="programmingExperienceH3" class="title-h3"></h3>
-			<div class="list-container">
-        		<ul class="list-ul">
-            		<li data-i18n="programmingExperienceLi1"></li>
-            		<li data-i18n="programmingExperienceLi2"></li>
-            		<li data-i18n="programmingExperienceLi3"></li>
-            		<li data-i18n="programmingExperienceLi4"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="programmingSoftwareH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="programmingSoftwareLi1"></li>
-					<li data-i18n="programmingSoftwareLi2"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="programmingProjectsH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="programmingProjectsLi1"></li>
-					<li data-i18n="programmingProjectsLi2"></li>
-					<li data-i18n="programmingProjectsLi3"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="programmingOngoingH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="programmingOngoingLi1"></li>
-					<li data-i18n="programmingOngoingLi2"></li>
-					<li data-i18n="programmingOngoingLi3"></li>
-					<li data-i18n="programmingOngoingLi4"></li>
-					<li data-i18n="programmingOngoingLi5"></li>
-					<li data-i18n="programmingOngoingLi6"></li>
-				</ul>
-			</div>
-		</section>
-		<section id="music">
-			<h2 data-i18n="musicH2"></h2>
-			<h3 data-i18n="musicExperienceH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="musicExperienceLi1"></li>
-					<li data-i18n="musicExperienceLi2"></li>
-					<li data-i18n="musicExperienceLi3"></li>
-					<li data-i18n="musicExperienceLi4"></li>
-					<li data-i18n="musicExperienceLi5"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="musicSoftwareH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="musicSoftwareLi1"></li>
-					<li data-i18n="musicSoftwareLi2"></li>
-					<li data-i18n="musicSoftwareLi3"></li>
-					<li data-i18n="musicSoftwareLi4"></li>
-					<li data-i18n="musicSoftwareLi5"></li>
-					<li data-i18n="musicSoftwareLi6"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="musicInstrumentsH3" class="title-h3"></h3>
-			<div class="list-container">
-				<ul class="list-ul">
-					<li data-i18n="musicInstrumentsLi1"></li>
-					<li data-i18n="musicInstrumentsLi2"></li>
-					<li data-i18n="musicInstrumentsLi3"></li>
-					<li data-i18n="musicInstrumentsLi4"></li>
-					<li data-i18n="musicInstrumentsLi5"></li>
-					<li data-i18n="musicInstrumentsLi6"></li>
-					<li data-i18n="musicInstrumentsLi7"></li>
-					<li data-i18n="musicInstrumentsLi8"></li>
-					<li data-i18n="musicInstrumentsLi9"></li>
-					<li data-i18n="musicInstrumentsLi10"></li>
-					<li data-i18n="musicInstrumentsLi11"></li>
-					<li data-i18n="musicInstrumentsLi12"></li>
-					<li data-i18n="musicInstrumentsLi13"></li>
-					<li data-i18n="musicInstrumentsLi14"></li>
-					<li data-i18n="musicInstrumentsLi15"></li>
-				</ul>
-			</div>
-			<h3 data-i18n="musicProjectsH3" class="title-h3"></h3>
-			<div class="audio-list">
-				<div class="audio-item">
-					<p data-i18n="musicProjectsP1" class="audio-title"></p>
-					<audio controls>
-						<source src="assets/memories.mp3" type="audio/mpeg">
-					</audio>
+			<div class="section-content">
+				<h2 data-i18n="programmingH2"></h2>
+				<h3 data-i18n="programmingExperienceH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="programmingExperienceLi1"></li>
+						<li data-i18n="programmingExperienceLi2"></li>
+						<li data-i18n="programmingExperienceLi3"></li>
+						<li data-i18n="programmingExperienceLi4"></li>
+					</ul>
 				</div>
+				<h3 data-i18n="programmingSoftwareH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="programmingSoftwareLi1"></li>
+						<li data-i18n="programmingSoftwareLi2"></li>
+					</ul>
+				</div>
+				<h3 data-i18n="programmingProjectsH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="programmingProjectsLi1"></li>
+						<li data-i18n="programmingProjectsLi2"></li>
+						<li data-i18n="programmingProjectsLi3"></li>
+					</ul>
+				</div>
+				<h3 data-i18n="programmingOngoingH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="programmingOngoingLi1"></li>
+						<li data-i18n="programmingOngoingLi2"></li>
+						<li data-i18n="programmingOngoingLi3"></li>
+						<li data-i18n="programmingOngoingLi4"></li>
+						<li data-i18n="programmingOngoingLi5"></li>
+						<li data-i18n="programmingOngoingLi6"></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<section id="music">
+			<div class="section-content">
+				<h2 data-i18n="musicH2"></h2>
+				<h3 data-i18n="musicExperienceH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="musicExperienceLi1"></li>
+						<li data-i18n="musicExperienceLi2"></li>
+						<li data-i18n="musicExperienceLi3"></li>
+						<li data-i18n="musicExperienceLi4"></li>
+						<li data-i18n="musicExperienceLi5"></li>
+					</ul>
+				</div>
+				<h3 data-i18n="musicSoftwareH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="musicSoftwareLi1"></li>
+						<li data-i18n="musicSoftwareLi2"></li>
+						<li data-i18n="musicSoftwareLi3"></li>
+						<li data-i18n="musicSoftwareLi4"></li>
+						<li data-i18n="musicSoftwareLi5"></li>
+						<li data-i18n="musicSoftwareLi6"></li>
+					</ul>
+				</div>
+				<h3 data-i18n="musicInstrumentsH3" class="title-h3"></h3>
+				<div class="list-container">
+					<ul class="list-ul">
+						<li data-i18n="musicInstrumentsLi1"></li>
+						<li data-i18n="musicInstrumentsLi2"></li>
+						<li data-i18n="musicInstrumentsLi3"></li>
+						<li data-i18n="musicInstrumentsLi4"></li>
+						<li data-i18n="musicInstrumentsLi5"></li>
+						<li data-i18n="musicInstrumentsLi6"></li>
+						<li data-i18n="musicInstrumentsLi7"></li>
+						<li data-i18n="musicInstrumentsLi8"></li>
+						<li data-i18n="musicInstrumentsLi9"></li>
+						<li data-i18n="musicInstrumentsLi10"></li>
+						<li data-i18n="musicInstrumentsLi11"></li>
+						<li data-i18n="musicInstrumentsLi12"></li>
+						<li data-i18n="musicInstrumentsLi13"></li>
+						<li data-i18n="musicInstrumentsLi14"></li>
+						<li data-i18n="musicInstrumentsLi15"></li>
+					</ul>
+				</div>
+				<h3 data-i18n="musicProjectsH3" class="title-h3"></h3>
+				<div class="audio-list">
+					<div class="audio-item">
+						<p data-i18n="musicProjectsP1" class="audio-title"></p>
+						<audio controls>
+							<source src="assets/memories.mp3" type="audio/mpeg">
+						</audio>
+					</div>
 
-				<div class="audio-item">
-					<p data-i18n="musicProjectsP2" class="audio-title"></p>
-					<audio controls>
-						<source src="assets/hidden-truth.mp3" type="audio/mpeg">
-					</audio>
+					<div class="audio-item">
+						<p data-i18n="musicProjectsP2" class="audio-title"></p>
+						<audio controls>
+							<source src="assets/hidden-truth.mp3" type="audio/mpeg">
+						</audio>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section id="video-editing">
-			<h2 data-i18n="videoEditingH2"></h2>
+			<div class="section-content">
+				<h2 data-i18n="videoEditingH2"></h2>
+			</div>
 		</section>
 		<section id="art-2d">
-			<h2 data-i18n="art2dH2"></h2>
+			<div class="section-content">
+				<h2 data-i18n="art2dH2"></h2>
+			</div>
 		</section>
 		<section id="about-me">
-			<h2 data-i18n="aboutMeH2">:</h2>
-			<p data-i18n="aboutMeP"></p>
+			<div class="section-content">
+				<h2 data-i18n="aboutMeH2">:</h2>
+				<p data-i18n="aboutMeP"></p>
+			</div>
 		</section>
 		<section id="links">
-			<a href="https://www.linkedin.com/in/guilhermebersol/"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-linkedin.svg"></button></a>
-			<a href="https://www.fiverr.com/guilherme_eber"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-fiverr.svg"></button></a>
-			<a href="https://github.com/YakiQuiso"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-github.svg"></button></a>
-			<a href="https://open.spotify.com/artist/6XRaZf0hAMSLh70UPtMPCl?si=RDN5mykJQFakjJB0AcEhnQ"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-spotify.svg"></button></a>
-			<a href="https://www.youtube.com/channel/UC9Hq_QrHK9cTB3n2LEq4lEA"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-youtube.svg"></button></a>
-			<a href="https://music.youtube.com/channel/UCCKGCvYAPONqQ7wwGSzhNAA?si=FSwBQPI7EOZ6uOvN"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-youtube-music.svg"></button></a>
-			<a href="https://link.deezer.com/s/31USafLfddjDYnnQ6ALOk"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/deezer.svg"></button></a>
-			<a href="https://music.amazon.com.br/artists/B0DZBT91N2/yaki-quiso?marketplaceId=A2Q3Y263D00KWC&musicTerritory=BR&ref=dm_sh_meqf0FdKG3tfE9rCF5PfOv6VD"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-amazon-music.svg"></button></a>
-			<a href="https://music.apple.com/br/artist/yaki-quiso/1800094969"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-apple-music.svg"></button></a>
-			<a href="https://www.instagram.com/yakiquiso/"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-instagram.svg"></button></a>
-			<a href="https://www.tiktok.com/@yakiquiso?refer=creator_embed"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-tiktok.svg"></button></a>
-			<button type="button" onclick="copyText()" id="copy-gmail" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-gmail.svg"></button>
+			<div class="section-content">
+				<a href="https://www.linkedin.com/in/guilhermebersol/"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-linkedin.svg"></button></a>
+				<a href="https://www.fiverr.com/guilherme_eber"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-fiverr.svg"></button></a>
+				<a href="https://github.com/YakiQuiso"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-github.svg"></button></a>
+				<a href="https://open.spotify.com/artist/6XRaZf0hAMSLh70UPtMPCl?si=RDN5mykJQFakjJB0AcEhnQ"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-spotify.svg"></button></a>
+				<a href="https://www.youtube.com/channel/UC9Hq_QrHK9cTB3n2LEq4lEA"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-youtube.svg"></button></a>
+				<a href="https://music.youtube.com/channel/UCCKGCvYAPONqQ7wwGSzhNAA?si=FSwBQPI7EOZ6uOvN"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-youtube-music.svg"></button></a>
+				<a href="https://link.deezer.com/s/31USafLfddjDYnnQ6ALOk"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/deezer.svg"></button></a>
+				<a href="https://music.amazon.com.br/artists/B0DZBT91N2/yaki-quiso?marketplaceId=A2Q3Y263D00KWC&musicTerritory=BR&ref=dm_sh_meqf0FdKG3tfE9rCF5PfOv6VD"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-amazon-music.svg"></button></a>
+				<a href="https://music.apple.com/br/artist/yaki-quiso/1800094969"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-apple-music.svg"></button></a>
+				<a href="https://www.instagram.com/yakiquiso/"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-instagram.svg"></button></a>
+				<a href="https://www.tiktok.com/@yakiquiso?refer=creator_embed"><button type="submit" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-tiktok.svg"></button></a>
+				<button type="button" onclick="copyText('copy-gmail')" id="copy-gmail" formtarget="_blank" class="socialmedia-button"><img class="socialmedia-image" src="assets/icons8-gmail.svg"></button>
+			</div>
 		</section>
   </main>
   <footer>

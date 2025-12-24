@@ -160,7 +160,7 @@ const translations = {
 
     musicProjectsH3: "Alguns projetos e portfolio:",
     musicProjectsP1: "Metal Sinfonico Epico com Vocais SynthV em Inglês",
-    musicProjectsP2: "Musica Sinistra com Sussurros Imcompreensiveis usando Vocals SynthV",
+    musicProjectsP2: "Musica Sinistra com Sussurros Imcompreensiveis usando Vocais SynthV",
 
 
     videoEditingH2: "Ainda estou aprendendo isso!",
@@ -182,21 +182,27 @@ const translations = {
 };
 
 function copyText() {
-  navigator.clipboard.writeText ("yakisoquiso@gmail.com");
-  document.getElementById('copy-gmail').innerHTML = "You copied my Gmail!";
+  navigator.clipboard.writeText("yakisoquiso@gmail.com");
+  document.getElementById("copy-gmail").classList.add("active");
 }
 
-function showSection(id) {
+function showSection(id, clickedTab) {
   fadeActiveSection(() => {
     document.querySelectorAll("main section").forEach(section => {
       section.classList.remove("active");
     });
 
-    const target = document.getElementById(id);
-    target.classList.add("active");
+    document.getElementById(id).classList.add("active");
+
+    document.querySelectorAll(".nav-tab").forEach(li => {
+      li.classList.remove("active");
+    });
+
+    if (clickedTab) {
+      clickedTab.classList.add("active");
+    }
   });
 }
-
 
 function fadeActiveSection(callback) {
   const activeSection = document.querySelector("main section.active");
@@ -220,33 +226,57 @@ function fadeActiveSection(callback) {
   }, 200);
 }
 
-showSection("programming");
+function fadeProfileImg() {
+  const img = document.querySelector(".profile-image");
+  if (!img) return;
+
+  img.classList.add("fade-in")
+}
+
+window.addEventListener("load", () => {
+  const firstTab = document.querySelector(".default-tab");
+
+  showSection("programming", firstTab);
+  
+  const userLang =
+    localStorage.getItem("lang") ||
+    (navigator.language.startsWith("pt") ? "pt" : "en");
+  
+  setLanguage(userLang);
+  fadeProfileImg();
+});
 
 function setLanguage(lang) {
-  fadeActiveSection(() => {
+  const content = document.querySelector(
+    "main section.active .section-content"
+  );
+  if (!content) return;
+
+  content.classList.add("fade-out");
+
+  setTimeout(() => {
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.dataset.i18n;
       el.innerHTML = translations[lang][key];
-  });
+    });
 
-    const title = document.querySelector("nav h1");
-    title.classList.remove("fade-in-left");
+    content.classList.remove("fade-out");
+    content.classList.add("fade-in");
 
-    void title.offsetWidth;
+    setTimeout(() => {
+      content.classList.remove("fade-in");
+    }, 200);
+  }, 200);
 
-    title.classList.add("fade-in-left");
+  const title = document.querySelector("nav h1");
+  title.classList.remove("fade-in-left");
+  void title.offsetWidth;
+  title.classList.add("fade-in-left");
 
-    document
-      .querySelectorAll(".lang-btn")
-      .forEach(btn => btn.classList.remove("active"));
-
-    document
-      .querySelector(`.lang-btn[onclick="setLanguage('${lang}')"]`)
-      ?.classList.add("active");
-
-    localStorage.setItem("lang", lang)
-  });  
+  localStorage.setItem("lang", lang);
+  document.documentElement.lang = lang;
 }
+
 
 window.addEventListener("load", () => {
   document.querySelector("nav h1").classList.add("fade-in-left");
@@ -255,5 +285,3 @@ window.addEventListener("load", () => {
 const userLang =
   localStorage.getItem("lang") ||
   (navigator.language.startsWith("pt") ? "pt" : "en");
-
-setLanguage(userLang);
