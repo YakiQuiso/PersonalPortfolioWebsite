@@ -64,10 +64,8 @@ const translations = {
     musicInstrumentsLi9: "Sax",
     musicInstrumentsLi10: "Trumpet",
     musicInstrumentsLi11: "Trombone",
-    musicInstrumentsLi12: "Guitar",
-    musicInstrumentsLi13: "Fluegelhorn",
-    musicInstrumentsLi14: "Cello",
-    musicInstrumentsLi15: "Synthesizer",
+    musicInstrumentsLi12: "Fluegelhorn",
+    musicInstrumentsLi13: "Synthesizer",
 
     musicProjectsH3: "Some projects and portfolio:",
     musicProjectsP1: "Epic Symphonic Metal with English SynthV Vocals",
@@ -84,8 +82,8 @@ const translations = {
     aboutMeP: `I'm Guilherme Ebersol and I'm known as Yaki Quiso on social media, I'm from 2005 borned on the South of Brazil, 
       I quickly gained interest on computers and with time developed several hobbies such as music (since 2020) and programming (since 2022) 
       Because of music I needed to create music videos so more people could see my creations which led me to create videos using Kdenlive (2024) 
-      and some time after using Davinci Resolve (2026), I also started to learn and practice digital 2D art (2026), I post all my music on
-      music platforms since March of 2025, at that point I had already +100 songs created now I'm reaching the 150 mark.`,
+      and some time after using Davinci Resolve (2026), I also started to learn and practice digital 2D art on Krita and 2D animation on Moho (2026), 
+      I post all my music on music platforms since March of 2025, at that point I had already +100 songs created now I'm reaching the 150 mark.`,
   },
 
   pt:  {
@@ -153,10 +151,8 @@ const translations = {
     musicInstrumentsLi9: "Saxofone",
     musicInstrumentsLi10: "Trombeta",
     musicInstrumentsLi11: "Trombone",
-    musicInstrumentsLi12: "Violão",
-    musicInstrumentsLi13: "Fluegelhorn",
-    musicInstrumentsLi14: "Violoncelo",
-    musicInstrumentsLi15: "Sintetizador",
+    musicInstrumentsLi12: "Fluegelhorn",
+    musicInstrumentsLi13: "Sintetizador",
 
     musicProjectsH3: "Alguns projetos e portfolio:",
     musicProjectsP1: "Metal Sinfonico Epico com Vocais SynthV em Inglês",
@@ -176,7 +172,7 @@ const translations = {
     Por causa da musica precisei aprender a criar clipes musicais para mais pessoas 
     assistirem minhas criações, o que me levou a criar videos usando Kdenlive (2024) e 
     um tempo depois a usar Davinci Resolve (2026), tambem comecei a aprender e praticar arte 
-    digital 2D (2026), Publico todas minhas musicas em plataformas de musica desde março de 2025, 
+    digital 2D com Krita e animação 2D com Moho (2026), publico todas minhas musicas em plataformas de musica desde março de 2025, 
     naquele ponto ja havia criado +100 musicas, agora estou chegando na marca de 150.`,
   }
 };

@@ -50,16 +50,16 @@
 
 html {
   scrollbar-gutter: stable;
+  background-color: hsl(220, 38%, 19%);
 }
 
 
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #0f141c;
   color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 32px; 
 }
 
 html, body {
@@ -118,11 +118,11 @@ nav {
   min-width: 0;
   overflow-x: hidden;
   height: 160px;
-  background-color: #07091c;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  background-color: hsl(229, 47%, 11%);
 }
 
 nav .profile-image {
@@ -153,7 +153,6 @@ nav .profile-image {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: #07091c;
   top: 0;
   width: 100%;
   height: 10vh;
@@ -351,8 +350,8 @@ audio {
     grid-template-columns: 100%;
 }
   .socialmedia-button {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
 }
 }
 
@@ -429,8 +428,8 @@ audio {
     grid-template-columns: 100%;
 }
   .socialmedia-button {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
 }
 }
 
@@ -502,7 +501,7 @@ audio {
 }
 
   #links {
-    grid-template-columns: 20rem;
+    grid-template-columns: 100%;
 }
   .socialmedia-button {
     width: 130px;
@@ -578,11 +577,11 @@ audio {
 }
 
   #links {
-    grid-template-columns: 50%;
+    grid-template-columns: 100%;
 }
   .socialmedia-button {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
 }
 }
 
@@ -624,7 +623,6 @@ audio {
     min-width: 0;
     overflow-x: hidden;
     height: 160px;
-    background-color: #07091c;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -640,7 +638,6 @@ audio {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #07091c;
     top: 0;
     width: 100%;
     height: 10vh;
@@ -693,12 +690,12 @@ audio {
 
   #links {
     gap: 12px;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
   }
   
   .socialmedia-button {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 }
 
@@ -740,7 +737,6 @@ audio {
     min-width: 0;
     overflow-x: hidden;
     height: 160px;
-    background-color: #07091c;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -756,7 +752,6 @@ audio {
     display: flex;
     align-items: center;
     gap: 2rem;
-    background-color: #07091c;
     top: 0;
     width: 100%;
     height: 10vh;
