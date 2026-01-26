@@ -12,7 +12,6 @@
 <body translate="no">
 	<nav class="full-nav" id="nav">
 		<img class="profile-image" src="assets/profile.png">
-		<h1 data-i18n="titleH1"></h1>
 		<ul class="nav-ul">
 			<li data-i18n="programmingNav" class="nav-tab default-tab" onclick="showSection('programming', this)"></li>
 			<li data-i18n="musicNav" class="nav-tab" onclick="showSection('music', this)"></li>
@@ -25,6 +24,7 @@
 		
 		<div class="lang-switch">
   		<button
+			id="english-flag"
     		class="lang-btn"
     		aria-label="English"
     		onclick="setLanguage('en')"
@@ -32,17 +32,20 @@
     	<img
      	 src="assets/icons8-united-states-48.png"
      	 alt="English"
+		 class="flag-img"
     	>
  		</button>
 
   		<button
-    	class="lang-btn"
-    	aria-label="Português (Brasil)"
-   		onclick="setLanguage('pt')"
+			id="brazil-flag"
+    		class="lang-btn"
+    		aria-label="Português (Brasil)"
+   			onclick="setLanguage('pt')"
   		>
     	<img
       		src="assets/icons8-brazil-48.png"
       		alt="Português"
+			class="flag-img"
     	>
   		</button>
 		</div>

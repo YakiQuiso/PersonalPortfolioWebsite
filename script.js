@@ -1,7 +1,6 @@
 const translations = {
   en: {
 
-    titleH1: "Yaki Quiso's<br>Portfolio",
     programmingNav: "Programming",
     musicNav: "Music",
     videoEditingNav: "Video Editing",
@@ -92,7 +91,6 @@ const translations = {
 
   pt:  {
 
-    titleH1: "Portfolio de<br>Yaki Quiso",
     programmingNav: "Programação",
     musicNav: "Musica",
     videoEditingNav: "Edição de Video",
@@ -185,8 +183,6 @@ const translations = {
   }
 };
 
-var navHeight = document.getElementById('nav').offsetHeight;
-
 function copyText() {
   navigator.clipboard.writeText("yakisoquiso@gmail.com");
   document.getElementById("copy-gmail").classList.add("active");
@@ -232,24 +228,48 @@ function fadeActiveSection(callback) {
   }, 200);
 }
 
-function fadeProfileImg() {
-  const img = document.querySelector(".profile-image");
-  if (!img) return;
+function fadeElements(selector, options = {}) {
+  const {stagger = 0, reset = false} = options;
+  const elements = document.querySelectorAll(selector);
+  if (!elements.length) return;
 
-  img.classList.add("fade-in")
+  elements.forEach(el => {
+    if (reset) {
+      el.classList.remove("fade-in");
+      el.classList.add("nav-reset");
+    }
+  });
+
+  void document.body.offsetHeight;
+
+  requestAnimationFrame(() => {
+    elements.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.remove("nav-reset");
+        el.classList.add("fade-in");
+      }, i * stagger);
+    });
+  });
 }
 
 window.addEventListener("load", () => {
   const firstTab = document.querySelector(".default-tab");
 
   showSection("programming", firstTab);
+
+  setTimeout(() => {
+    document.querySelector(".default-tab").classList.add("active");
+}, 80 * document.querySelectorAll("nav li").length + 100);
+
   
   const userLang =
     localStorage.getItem("lang") ||
     (navigator.language.startsWith("pt") ? "pt" : "en");
   
   setLanguage(userLang);
-  fadeProfileImg();
+  fadeElements(".profile-image");
+  fadeElements(".lang-switch");
+  fadeElements("nav li", { stagger: 80 });
 });
 
 function setLanguage(lang) {
@@ -272,21 +292,13 @@ function setLanguage(lang) {
     setTimeout(() => {
       content.classList.remove("fade-in");
     }, 200);
-  }, 200);
-
-  const title = document.querySelector("nav h1");
-  title.classList.remove("fade-in-left");
-  void title.offsetWidth;
-  title.classList.add("fade-in-left");
+  }, 200)
+    setTimeout(() => {
+}, 200);
 
   localStorage.setItem("lang", lang);
   document.documentElement.lang = lang;
 }
-
-
-window.addEventListener("load", () => {
-  document.querySelector("nav h1").classList.add("fade-in-left");
-})
 
 const userLang =
   localStorage.getItem("lang") ||
