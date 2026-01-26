@@ -6,6 +6,7 @@ const translations = {
     musicNav: "Music",
     videoEditingNav: "Video Editing",
     art2dNav: "2D art",
+    animationNav: "Animation",
     aboutMeNav: "About Me",
     linksNav: "Links",
 
@@ -78,6 +79,9 @@ const translations = {
     art2dH2: "Still learning this!",
 
 
+    animationH2: "Still learning this!",
+
+
     aboutMeH2: "My Story:",
     aboutMeP: `I'm Guilherme Ebersol and I'm known as Yaki Quiso on social media, I'm from 2005 borned on the South of Brazil, 
       I quickly gained interest on computers and with time developed several hobbies such as music (since 2020) and programming (since 2022) 
@@ -93,6 +97,7 @@ const translations = {
     musicNav: "Musica",
     videoEditingNav: "Edição de Video",
     art2dNav: "Arte 2D",
+    animationNav: "Animação",
     aboutMeNav: "Sobre Mim",
     linksNav: "Links",
 
@@ -165,6 +170,9 @@ const translations = {
     art2dH2: "Ainda estou aprendendo isso!",
 
 
+    animationH2: "Ainda estou aprendendo isso!",
+
+
     aboutMeH2: "Minha História:",
     aboutMeP: `Eu me chamo Guilherme Ebersol e sou conhecido como Yaki Quiso nas redes sociais, 
     Sou de 2005 nascido no sul do Brasil, Rapidamente ganhei interesse em computadores e 
@@ -176,6 +184,8 @@ const translations = {
     naquele ponto ja havia criado +100 musicas, agora estou chegando na marca de 150.`,
   }
 };
+
+var navHeight = document.getElementById('nav').offsetHeight;
 
 function copyText() {
   navigator.clipboard.writeText("yakisoquiso@gmail.com");

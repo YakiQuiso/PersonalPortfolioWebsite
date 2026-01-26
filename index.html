@@ -10,16 +10,15 @@
 	<link rel="icon" href="assets/profile.png">
 </head>
 <body translate="no">
-	<nav class="full-nav">
-		<div class="nav-left">
-			<h1 data-i18n="titleH1"></h1>
-		</div>
+	<nav class="full-nav" id="nav">
 		<img class="profile-image" src="assets/profile.png">
+		<h1 data-i18n="titleH1"></h1>
 		<ul class="nav-ul">
 			<li data-i18n="programmingNav" class="nav-tab default-tab" onclick="showSection('programming', this)"></li>
 			<li data-i18n="musicNav" class="nav-tab" onclick="showSection('music', this)"></li>
 			<li data-i18n="videoEditingNav" class="nav-tab" onclick="showSection('video-editing', this)"></li>
 			<li data-i18n="art2dNav" class="nav-tab" onclick="showSection('art-2d', this)"></li>
+			<li data-i18n="animationNav" class="nav-tab" onclick="showSection('animation', this)"></li>
 			<li data-i18n="aboutMeNav" class="nav-tab" onclick="showSection('about-me', this)"></li>
 			<li data-i18n="linksNav" class="nav-tab" onclick="showSection('links', this)"></li>
 		</ul>
@@ -157,6 +156,11 @@
 		<section id="art-2d">
 			<div class="section-content">
 				<h2 data-i18n="art2dH2"></h2>
+			</div>
+		</section>
+		<section id="animation">
+			<div class="section-content">
+				<h2 data-i18n="animationH2"></h2>
 			</div>
 		</section>
 		<section id="about-me">
