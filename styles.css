@@ -271,25 +271,25 @@ audio {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
 
 @media only screen and (min-width: 600px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -305,6 +305,6 @@ audio {
 
 @media only screen and (min-width: 1920px) {
   html {
-    font-size: 16px;
+    font-size: 13px;
   } 
 }
