@@ -162,8 +162,11 @@ const translations = {
     musicInstrumentsLi13: "Sintetizador",
 
     musicProjectsH3: "Alguns projetos e portfolio:",
-    musicProjectsP1: "Metal Sinfonico Epico com Vocais SynthV em Inglês",
-    musicProjectsP2: "Musica Sinistra com Sussurros Imcompreensiveis usando Vocais SynthV",
+    musicProjectsH4: "Kitty's Redemption",
+    musicProjectsP1: "Soundtrack:",
+    musicProjectsP1: "Game jam de 3 dias, 15º lugar entre 61 jogos",
+    musicProjectsP2: "Metal Sinfônico Épico com Vocais SynthV em Inglês",
+    musicProjectsP3: "Musica Sinistra com Sussurros Imcompreensiveis usando Vocais SynthV",
 
 
     videoEditingH2: "Ainda estou aprendendo isso!",
