@@ -1,1 +1,1 @@
-Personal portfolio website to showcase my skills and projects on several topics like programming, music, video editing, 2d art and animation + about me section and links to relevant social media
+Personal portfolio website to showcase my skills and projects on several topics like programming, music, video editing, 2d art and animation + about me section and links to relevant social media, new version using Bootstrap

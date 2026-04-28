@@ -114,6 +114,7 @@ body {
 .certification-img {
   width: 10rem;
   height: 10rem;
+  margin: 1rem;
 }
 
 .profile-img {
@@ -146,13 +147,13 @@ footer {
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 4px;
+    font-size: 3.5px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 5px;
+    font-size: 4px;
   }
   .navbar-brand {
     display: initial;
@@ -162,12 +163,12 @@ footer {
 
 @media only screen and (min-width: 1920px) {
   html {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
