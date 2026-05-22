@@ -26,10 +26,11 @@
 
 nav {
   background-image: linear-gradient(hsl(163, 94%, 6%), hsl(175, 100%, 2%));
+  width: 100%;
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: techFontBold;
 }
 
@@ -42,7 +43,7 @@ nav {
 }
 
 .nav-item {
-  width: 20rem;
+  padding: 0rem 4rem;
   text-align: center;
 }
 
@@ -127,9 +128,13 @@ footer {
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 200px) {
   html {
     font-size: 2px;
+  }
+  .navbar-brand {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -142,6 +147,10 @@ footer {
 @media only screen and (min-width: 992px) {
   html {
     font-size: 3.5px;
+  }
+  .navbar-brand {
+    display: initial;
+    visibility: visible;
   }
 }
 

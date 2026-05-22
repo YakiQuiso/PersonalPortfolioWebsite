@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .nav-link.active {
@@ -35,7 +35,7 @@ nav {
 }
 
 .nav-item {
-  width: 20rem;
+  padding: 0rem 4rem;
   text-align: center;
 }
 
