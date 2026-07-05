@@ -59,14 +59,14 @@ body {
 }
 
 .separator {
-  border: 0.1rem solid white;
+  border: 0.1rem solid hsl(192, 48%, 82%);
   place-content: center;
 }
 
 .portfolio-button {
   margin: 1rem;
   background-color: hsl(225, 51%, 35%);
-  border: 0.2rem solid white;
+  border: 0.2rem solid hsl(207, 45%, 67%);
 }
 
 .portfolio-button:hover {

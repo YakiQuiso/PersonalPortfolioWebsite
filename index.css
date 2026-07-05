@@ -76,7 +76,7 @@ body {
 }
 
 .separator {
-  border: 0.1rem solid white;
+  border: 0.1rem solid hsl(105, 50%, 71%);
   place-content: center;
 }
 
