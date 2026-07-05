@@ -1,18 +1,22 @@
 @keyframes fadeinall {
-    0% {
-      opacity: 1; }
-    97% {
-      opacity: 0; }
-    98% {
-      opacity: 0;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      z-index: -1; } }
-
+  0% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+}
 
 @font-face {
   font-family: techFont;
@@ -35,7 +39,11 @@ nav {
 }
 
 .nav-link.active {
-  background: -webkit-linear-gradient(90deg, hsl(4, 62%, 50%), hsl(14, 66%, 63%));
+  background: -webkit-linear-gradient(
+    90deg,
+    hsl(4, 62%, 50%),
+    hsl(14, 66%, 63%)
+  );
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
