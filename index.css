@@ -91,7 +91,7 @@ body {
 }
 
 .portfolio-name {
-  font-size: 6rem;
+  font-size: 5rem;
   background: -webkit-linear-gradient(hsl(125, 36%, 54%), hsl(130, 32%, 50%));
   background-clip: content-box;
   -webkit-background-clip: text;
