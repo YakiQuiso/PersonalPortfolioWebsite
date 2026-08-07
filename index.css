@@ -30,7 +30,11 @@
 
 nav {
   background-image: linear-gradient(hsl(163, 94%, 6%), hsl(175, 100%, 2%));
+}
+
+.navbar-nav {
   width: 100%;
+  justify-content: center;
 }
 
 .nav-link {
@@ -52,7 +56,6 @@ nav {
 
 .nav-item {
   padding: 0rem 4rem;
-  text-align: center;
 }
 
 .navbar-brand {
@@ -73,11 +76,6 @@ body {
   text-align: center;
   font-family: techFont;
   background-image: linear-gradient(hsl(138, 68%, 14%), hsl(206, 100%, 3%));
-}
-
-.separator {
-  border: 0.1rem solid hsl(105, 50%, 71%);
-  place-content: center;
 }
 
 .tech-item {
@@ -130,6 +128,13 @@ body {
   width: 10rem;
   height: 10rem;
   margin: 1rem;
+}
+
+.block {
+  border: 0.5rem solid hsl(120, 100%, 25%);
+  background-color: hsl(136, 68%, 7%);
+  margin: 0rem;
+  padding: 0rem;
 }
 
 .uniasselvi-icon {
