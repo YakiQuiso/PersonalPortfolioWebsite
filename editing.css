@@ -100,6 +100,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+iframe {
+  border: 0.5rem solid darkgoldenrod;
+}
+
 .portfolio-img {
   width: 40rem;
   height: 40rem;
