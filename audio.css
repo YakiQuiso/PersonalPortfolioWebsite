@@ -68,7 +68,7 @@ body {
 }
 
 .separator {
-  border: 0.1rem solid hsl(186, 44%, 87%);
+  border: 0.1rem solid hsl(189, 95%, 32%);
   place-content: center;
 }
 
@@ -113,7 +113,7 @@ body {
   padding: 0rem;
 }
 
-.text {
+.text-center {
   align-content: center;
 }
 
@@ -137,7 +137,7 @@ video {
 }
 
 footer {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 @media only screen and (max-width: 600px) {
