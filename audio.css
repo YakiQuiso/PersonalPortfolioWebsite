@@ -126,9 +126,18 @@ body {
   height: 30rem;
 }
 
+.platforms:hover {
+  transform: scale(1.2);
+}
+
+iframe {
+  width: 128rem;
+  height: 72rem;
+}
+
 video {
-  width: 120rem;
-  height: auto;
+  width: 128rem;
+  height: 72rem;
 }
 
 footer {
