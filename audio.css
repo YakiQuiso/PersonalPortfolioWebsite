@@ -88,15 +88,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.portfolio-button {
-  background: none;
-  border: none;
-}
-
-.portfolio-button:hover {
-  transform: scale(1.05);
-}
-
 .portfolio-img {
   width: 160rem;
   height: 90rem;
@@ -123,10 +114,6 @@ body {
 }
 
 .text {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   align-content: center;
 }
 
