@@ -72,10 +72,6 @@ body {
   place-content: center;
 }
 
-.tech-item {
-  margin: 2rem;
-}
-
 .portfolio-name {
   font-size: 12rem;
   background: -webkit-linear-gradient(hsl(204, 24%, 56%), hsl(198, 32%, 69%));
@@ -104,6 +100,19 @@ body {
 .portfolio-img {
   width: 160rem;
   height: 90rem;
+}
+
+.tools-img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.tools-name {
+  font-size: 10rem;
+  background: -webkit-linear-gradient(hsl(204, 24%, 56%), hsl(198, 32%, 69%));
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .block {
