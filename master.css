@@ -1,0 +1,162 @@
+@keyframes fadeinall {
+  0% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 4rem;
+}
+
+.nav-link.active {
+  background: -webkit-linear-gradient(
+    90deg,
+    hsl(4, 62%, 50%),
+    hsl(14, 66%, 63%)
+  );
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
+
+.nav-item {
+  padding: 0rem 3rem;
+}
+
+.navbar-brand {
+  position: absolute;
+  font-size: 5rem;
+}
+
+h1 {
+  font-size: 16rem;
+}
+
+body {
+  text-align: center;
+}
+
+.tech-item {
+  margin: 2rem;
+}
+
+.separator {
+  place-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-button {
+  background: none;
+  border: none;
+}
+
+.project-name {
+  font-size: 16rem;
+}
+
+.portfolio-name {
+  font-size: 8rem;
+}
+
+.portfolio-description {
+  font-size: 6rem;
+}
+
+.portfolio-button:hover {
+  transform: scale(1.02);
+}
+
+.project-img {
+  width: 100rem;
+  height: 100rem;
+  clip-path: circle();
+}
+
+.portfolio-img {
+  width: 40rem;
+  height: 40rem;
+  clip-path: circle();
+}
+
+.certification-img {
+  width: 40rem;
+  height: 40rem;
+  clip-path: circle();
+}
+
+.technology-img {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+}
+
+.block {
+  margin: 8rem 0rem;
+  padding: 8rem;
+}
+
+.text-center {
+  align-content: center;
+}
+
+footer {
+  font-size: 5rem;
+}
+
+@media only screen and (min-width: 200px) {
+  html {
+    font-size: 1.4px;
+  }
+  .navbar-brand {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 3.5px;
+  }
+  .navbar-brand {
+    display: initial;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 5px;
+  }
+}
