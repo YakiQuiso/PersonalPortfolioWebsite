@@ -25,6 +25,7 @@ h1 {
 body {
   background-image: linear-gradient(hsl(61, 69%, 14%), hsl(32, 100%, 3%));
   font-family: editingFont;
+  height: 100vh;
 }
 
 .separator {

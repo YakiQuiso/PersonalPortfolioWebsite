@@ -1,6 +1,6 @@
 @font-face {
   font-family: aboutMeFont;
-  src: url(assets/fonts/embolism-spark.regular.ttf);
+  src: url(assets/fonts/BerkshireSwash-Regular.ttf);
 }
 
 nav {
@@ -10,6 +10,7 @@ nav {
 body {
   background-image: linear-gradient(hsl(0, 85%, 8%), hsl(339, 100%, 3%));
   font-family: aboutMeFont;
+  height: 100vh;
 }
 
 .separator {

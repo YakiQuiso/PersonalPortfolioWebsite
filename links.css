@@ -10,6 +10,7 @@ nav {
 body {
   font-family: linksFont;
   background-image: radial-gradient(hsl(281, 78%, 13%), hsl(252, 100%, 3%));
+  height: 100vh;
 }
 
 .separator {
@@ -19,4 +20,5 @@ body {
 .portfolio-button {
   background-color: hsl(225, 51%, 35%);
   border: 0.2rem solid hsl(207, 45%, 67%);
+  margin: 5rem 0rem;
 }

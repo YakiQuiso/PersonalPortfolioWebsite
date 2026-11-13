@@ -23,7 +23,7 @@
 }
 
 .nav-link {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .nav-link.active {
@@ -44,7 +44,7 @@
 
 .navbar-brand {
   position: absolute;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 h1 {
